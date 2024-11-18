@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: lightgray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    word-spacing: 1px;
+    border-left: 0.25em solid black;
+    padding-left: 0.75em;
+    margin: 10px 0;
+}
+
+header {
+    height: 200px;
+    padding: 10px 50px;
+    background: rgb(19, 19, 56);
+    background-image: url('https://picsum.photos/1920/200');
+    background-size:cover;
+}
+
+header a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: -5px 5px 5px black;
+    transition: 1s all;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+header a:hover {
+    color: lightgray;
+    text-shadow: 0px 0px 5px black;
+    left: -5px;
+    top: 5px;
+}
+
+header .current a {
+    text-decoration: underline;
+}
+
+header nav {
+    height: 100%;
+}
+
+header nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+}
+
+header nav ul li {
+    margin-left: 50px;
+    margin-right: 5px;
+    font-size: 2em;
+    list-style: none;
+}
+
+main {
+    min-height: calc(100vh - 320px);
+    width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+main p {
+    padding: 0 20px;
+    margin: 20px 0;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+
+main p img {
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+footer {
+    height: 100px;
+    background: rgb(18, 41, 60);
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        width: auto;
+    }
+
+    main p {
+        padding: 0 10px;
+    }
+}
